@@ -1,1 +1,3 @@
-python playing.py D10C4C8D8S4
+python version: 2.7.12
+
+Run: python playing.py D10C4C8D8S4
