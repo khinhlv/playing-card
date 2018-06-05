@@ -15,7 +15,7 @@ def parse_params(input_string):
     if s == '1':
       c = s	 
     if s == '0':
-      s = c + s		
+      s = c + s
 
     if s in ['S', 'H', 'D', 'C']:
       input_suites.append(s)
@@ -66,7 +66,7 @@ def main(argv):
 	
   input_string = sys.argv[1]
   # validate input string
-  pattern = '^(([S H D C])([2-9]|10|(J Q K A))){5}$'
+  pattern = '^(([S H D C])([2-9]|10|([J Q K A]))){5}$'
   pattern = re.compile(pattern)
   match = re.search(pattern, input_string)
   if not match:
