@@ -6,7 +6,7 @@ input_ranks = []
 same_suites = []
 same_ranks = []
 
-find_all = lambda s, lst: (i for i,e in enumerate(lst) if e == s)
+find_all = lambda s, lst: (i for i, e in enumerate(lst) if e == s)
 
 # parse parameter into arrays input_suites, input_ranks
 def parse_params(input_string):
