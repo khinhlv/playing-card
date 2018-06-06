@@ -35,8 +35,8 @@ def find_same_ranks_suites(input_suites, input_ranks):
 
 # playing card function
 def playing_card(input_suites, input_ranks):
+  
   output = ''
-  find_same_ranks_suites(input_suites, input_ranks)
   same_max = max(same_ranks)
 	
   if same_max == 4:
@@ -65,6 +65,7 @@ def main(argv):
     sys.exit()
 	
   input_string = sys.argv[1]
+  
   # validate input string
   pattern = '^(([S H D C])([2-9]|10|([J Q K A]))){5}$'
   pattern = re.compile(pattern)
@@ -75,6 +76,9 @@ def main(argv):
 
   # parse input params to array
   parse_params(input_string)
+  
+  find_same_ranks_suites(input_suites, input_ranks)
+  
   # main process
   print playing_card(input_suites, input_ranks)
 
